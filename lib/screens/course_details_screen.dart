@@ -1,3 +1,4 @@
+import 'package:classical_education/screens/courses_screen.dart';
 import 'package:classical_education/utils/string_extensions.dart';
 import 'package:classical_education/widgets/playlist_item.dart';
 import 'package:flutter/cupertino.dart';
@@ -16,7 +17,14 @@ class CourseDetailsScreen extends StatelessWidget {
       appBar: AppBar(
         leadingWidth: 80,
         leading: IconButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => CoursesScreen(),
+              ),
+            );
+          },
           style: IconButton.styleFrom(
             side: BorderSide(
               color: Colors.grey.shade400,
@@ -218,24 +226,25 @@ class CourseDetailsScreen extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: BottomAppBar(
-          child: Container(
-        width: double.infinity,
-        height: 50,
-        decoration: BoxDecoration(
-          color: const Color.fromARGB(255, 255, 95, 50),
-          borderRadius: BorderRadius.circular(20),
-        ),
-        child: Center(
-          child: Text(
-            "purchase only-\$28".capitalize(),
-            style: const TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.w500,
-              color: Colors.white,
+        child: Container(
+          width: double.infinity,
+          height: 50,
+          decoration: BoxDecoration(
+            color: const Color.fromARGB(255, 255, 95, 50),
+            borderRadius: BorderRadius.circular(20),
+          ),
+          child: Center(
+            child: Text(
+              "purchase only-\$28".capitalize(),
+              style: const TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.w500,
+                color: Colors.white,
+              ),
             ),
           ),
         ),
-      )),
+      ),
     );
   }
 }

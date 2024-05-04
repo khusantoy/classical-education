@@ -1,3 +1,4 @@
+import 'package:classical_education/screens/course_details_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -277,157 +278,177 @@ class CoursesScreen extends StatelessWidget {
                 const SizedBox(
                   height: 20,
                 ),
-                Row(
-                  children: [
-                    Column(
-                      children: [
-                        Container(
-                          width: 80,
-                          height: 80,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20),
-                            image: const DecorationImage(
-                              image: AssetImage("assets/images/coding.jpg"),
-                              fit: BoxFit.cover,
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => CourseDetailsScreen(),
+                      ),
+                    );
+                  },
+                  child: Row(
+                    children: [
+                      Column(
+                        children: [
+                          Container(
+                            width: 80,
+                            height: 80,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20),
+                              image: const DecorationImage(
+                                image: AssetImage("assets/images/coding.jpg"),
+                                fit: BoxFit.cover,
+                              ),
                             ),
+                          )
+                        ],
+                      ),
+                      const SizedBox(
+                        width: 20,
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            children: [
+                              const Icon(
+                                CupertinoIcons.square_list_fill,
+                                color: Color.fromARGB(255, 114, 112, 235),
+                              ),
+                              const SizedBox(
+                                width: 5,
+                              ),
+                              Text(
+                                "24 Lessons",
+                                style: TextStyle(
+                                  color: Colors.grey.shade500,
+                                ),
+                              ),
+                              const SizedBox(
+                                width: 20,
+                              ),
+                              const Icon(
+                                CupertinoIcons.play_circle_fill,
+                                color: Color.fromARGB(255, 255, 95, 50),
+                              ),
+                              const SizedBox(
+                                width: 5,
+                              ),
+                              Text(
+                                "2Hr 30Min",
+                                style: TextStyle(
+                                  color: Colors.grey.shade500,
+                                ),
+                              )
+                            ],
                           ),
-                        )
-                      ],
-                    ),
-                    const SizedBox(
-                      width: 20,
-                    ),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Row(
-                          children: [
-                            const Icon(
-                              CupertinoIcons.square_list_fill,
-                              color: Color.fromARGB(255, 114, 112, 235),
-                            ),
-                            const SizedBox(
-                              width: 5,
-                            ),
-                            Text(
-                              "24 Lessons",
-                              style: TextStyle(
-                                color: Colors.grey.shade500,
+                          const SizedBox(
+                            height: 10,
+                          ),
+                          const Row(
+                            children: [
+                              Text(
+                                "Learn Web Development",
+                                style: TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
-                            ),
-                            const SizedBox(
-                              width: 20,
-                            ),
-                            const Icon(
-                              CupertinoIcons.play_circle_fill,
-                              color: Color.fromARGB(255, 255, 95, 50),
-                            ),
-                            const SizedBox(
-                              width: 5,
-                            ),
-                            Text(
-                              "2Hr 30Min",
-                              style: TextStyle(
-                                color: Colors.grey.shade500,
-                              ),
-                            )
-                          ],
-                        ),
-                        const SizedBox(
-                          height: 10,
-                        ),
-                        const Row(
-                          children: [
-                            Text(
-                              "Learn Web Development",
-                              style: TextStyle(
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ],
-                        )
-                      ],
-                    )
-                  ],
+                            ],
+                          )
+                        ],
+                      )
+                    ],
+                  ),
                 ),
                 const SizedBox(
-                  height: 20, //!
+                  height: 20,
                 ),
-                Row(
-                  children: [
-                    Column(
-                      children: [
-                        Container(
-                          width: 80,
-                          height: 80,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20),
-                            image: const DecorationImage(
-                              image: AssetImage("assets/images/painting.jpg"),
-                              fit: BoxFit.cover,
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => CourseDetailsScreen(),
+                      ),
+                    );
+                  },
+                  child: Row(
+                    children: [
+                      Column(
+                        children: [
+                          Container(
+                            width: 80,
+                            height: 80,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20),
+                              image: const DecorationImage(
+                                image: AssetImage("assets/images/painting.jpg"),
+                                fit: BoxFit.cover,
+                              ),
                             ),
+                          )
+                        ],
+                      ),
+                      const SizedBox(
+                        width: 20,
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            children: [
+                              const Icon(
+                                CupertinoIcons.square_list_fill,
+                                color: Color.fromARGB(255, 114, 112, 235),
+                              ),
+                              const SizedBox(
+                                width: 5,
+                              ),
+                              Text(
+                                "24 Lessons",
+                                style: TextStyle(
+                                  color: Colors.grey.shade500,
+                                ),
+                              ),
+                              const SizedBox(
+                                width: 20,
+                              ),
+                              const Icon(
+                                CupertinoIcons.play_circle_fill,
+                                color: Color.fromARGB(255, 255, 95, 50),
+                              ),
+                              const SizedBox(
+                                width: 5,
+                              ),
+                              Text(
+                                "2Hr 30Min",
+                                style: TextStyle(
+                                  color: Colors.grey.shade500,
+                                ),
+                              )
+                            ],
                           ),
-                        )
-                      ],
-                    ),
-                    const SizedBox(
-                      width: 20,
-                    ),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Row(
-                          children: [
-                            const Icon(
-                              CupertinoIcons.square_list_fill,
-                              color: Color.fromARGB(255, 114, 112, 235),
-                            ),
-                            const SizedBox(
-                              width: 5,
-                            ),
-                            Text(
-                              "24 Lessons",
-                              style: TextStyle(
-                                color: Colors.grey.shade500,
+                          const SizedBox(
+                            height: 10,
+                          ),
+                          const Row(
+                            children: [
+                              Text(
+                                "Learn Pro UI/UX Design",
+                                style: TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
-                            ),
-                            const SizedBox(
-                              width: 20,
-                            ),
-                            const Icon(
-                              CupertinoIcons.play_circle_fill,
-                              color: Color.fromARGB(255, 255, 95, 50),
-                            ),
-                            const SizedBox(
-                              width: 5,
-                            ),
-                            Text(
-                              "2Hr 30Min",
-                              style: TextStyle(
-                                color: Colors.grey.shade500,
-                              ),
-                            )
-                          ],
-                        ),
-                        const SizedBox(
-                          height: 10,
-                        ),
-                        const Row(
-                          children: [
-                            Text(
-                              "Learn Pro UI/UX Design",
-                              style: TextStyle(
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ],
-                        )
-                      ],
-                    )
-                  ],
-                ),
+                            ],
+                          )
+                        ],
+                      )
+                    ],
+                  ),
+                )
               ],
             ),
           ),

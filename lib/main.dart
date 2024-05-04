@@ -1,5 +1,6 @@
 import 'package:classical_education/screens/course_details_screen.dart';
 import 'package:classical_education/screens/courses_screen.dart';
+import 'package:classical_education/screens/start_screen.dart';
 
 import 'package:flutter/material.dart';
 
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: CourseDetailsScreen(),
+      home: StartScreen(),
     );
   }
 }
