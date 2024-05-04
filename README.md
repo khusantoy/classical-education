@@ -10,7 +10,7 @@ A new Flutter project.
     <img src="preview/photo1.png" alt="preview image 3" width="300" height="630">
 </div>
 
-> ### More about it in the telegram: https://t.me/khusanboyscodes/234?single
+> ### More about it in the telegram: https://t.me/s/khusanboyscodes/234?single
 
 ## Getting Started
 
