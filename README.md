@@ -2,6 +2,16 @@
 
 A new Flutter project.
 
+## Preview
+
+<div style="display: flex; justify-content: center;">
+    <img src="preview/photo3.png" alt="preview image 1" width="300" height="630">
+    <img src="preview/photo2.png" alt="preview image 2" width="300" height="630">
+    <img src="preview/photo1.png" alt="preview image 3" width="300" height="630">
+</div>
+
+> ### More about it in the telegram: https://t.me/khusanboyscodes/234?single
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
